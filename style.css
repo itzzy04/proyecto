@@ -1,0 +1,95 @@
+
+body{
+    background-color: #EAD5BF;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #5C4033;
+}
+header{
+    padding: 30px;
+    text-align: center; /*texto al centro*/
+}
+
+h1{
+    color: #5C4033;
+    margin: 0 0 15px 0; /* espacio externo: arriba, derecha, abajo, izq*/
+}
+
+nav a{
+    text-decoration: none; /* quita el azul de los links*/
+    color: #5C4033; /* color del link*/
+    margin: 0 15px;
+    font-weight: bold; /* texto en negrita*/
+}
+
+nav a:hover {
+    text-decoration: underline; /* aparece el subrayado cuando se pasa el mouse arriba*/
+}
+
+.intro {
+    text-align: center;
+    padding: 10px 40px 30px; /* espacio interno: arriba, lados, abajo*/
+}
+.intro p {
+    font-size: 18px;
+}
+.intro a {
+    color: #5C4033;
+    font-weight: bold; /*link en negrito*/
+}
+/* Sección mascotas*/
+.mascotas {
+    display: flex; /*pone los elementos en fila*/
+    flex-wrap: wrap; /*cuando hay varias cards, saltan a la linea sgte, NO SE ACHICAN*/
+    gap: 20px; /*espacio entre cards*/
+    justify-content: center; /*cards centradas horizantal*/
+    padding: 20px 40px; /*espacio interno de la sección*/
+}
+/* Card Individual*/ 
+.card {
+    background-color: #f5e6d3;
+    border-radius: 15px; /*esquinas redondas de las cards*/
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /*detalles de las sombras y difuminados*/
+    overflow: hidden; /*el contenido no se sale de los bordes*/
+    width: 320px; /*ancho fijo de la card*/
+    text-align: center; /*centra el contenido adentro de la card*/
+}
+.card > img {
+    width: 60%;  /* la imagen ocupa el 60% del ancho de la card */
+    height: 220px;
+    object-fit: cover;  /* recorta la imagen para que llene el espacio sin deformarse */
+    display: block;  /* necesario para que el margin auto funcione */
+    margin: 20px auto;  /* 20px arriba y abajo, auto a los lados = centrada horizontalmente */
+    border-radius: 12px; /*esquina redonda de la imagen */
+}
+
+.card-info {
+    padding: 15px 20px; /* espacio interno entre el borde de la card y el texto */
+}
+
+.card-info h3 {
+    margin: 0 0 10px 0; /*espacio de 10px abajo del nombre*/
+    font-size: 20px; /*tamaño del nombre de la mascota*/
+}
+
+.card-info p {
+    font-size: 15px;
+    text-align: left; /*alineado a la izquierda*/
+    font-weight: normal;
+    margin: 6px 0; /*espacio entre párrafos*/
+}
+
+/*  Galería de fotos extra */
+.galeria {
+    display: flex; /* pone las fotos en filita*/
+    justify-content: center;
+    gap: 10px; /*espacio entre fotos*/
+    margin-top: 15px; /*espacio sobre la galeria*/
+}
+
+.galeria img {
+    width: 80px; /*ancho fijo de las fotos extra*/
+    height: 80px; /*alto fijo*/
+    object-fit: cover; /*recorta sin deformar*/
+    border-radius: 10px;
+}
