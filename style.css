@@ -94,7 +94,6 @@ nav a:hover {
     border-radius: 10px;
 }
 .logo img{
-    max-width: 200px;
+    max-width: 400px;
     height: auto;
-    mix-blend-mode: multiply; /*desaparece el fondo blanco del logo disque png*/
 }
