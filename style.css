@@ -96,7 +96,7 @@ nav a:hover {
     border-radius: 10px;
 }
 .logo img{
-    max-width: 300px;
+    max-width: 400px;
     height: auto;
     mix-blend-mode: multiply; /*los colores del logo se mezclan con el color de la pag*/
     transform: scaleX(1.2); /*estira un poquis el logo*/
