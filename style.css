@@ -98,5 +98,5 @@ nav a:hover {
     max-width: 400px;
     height: auto;
     mix-blend-mode: multiply; /*los colores del logo se mezclan con el color de la pag*/
-    transform: scaleX(1.3); /*estira un poquis el logo*/
+    transform: scaleX(1.2); /*estira un poquis el logo*/
 }
