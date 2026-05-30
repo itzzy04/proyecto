@@ -6,7 +6,7 @@ body{
     color: #5C4033;
 }
 header{
-    padding: 5px 30px 30px;
+    padding: 10px 30px 30px;
     text-align: center; /*texto al centro*/
     background-color: #EAD5BF;
 }
@@ -98,4 +98,5 @@ nav a:hover {
     max-width: 300px;
     height: auto;
     mix-blend-mode: multiply; /*los colores del logo se mezclan con el color de la pag*/
+    transform: scaleX(1.2); /*estira un poquis el logo*/
 }
