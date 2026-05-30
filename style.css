@@ -29,10 +29,11 @@ nav a:hover {
 
 .intro {
     text-align: center;
-    padding: 0 40px 30px; /* espacio interno: arriba, lados, abajo*/
+    padding: 10px 40px 30px; /* espacio interno: arriba, lados, abajo*/
 }
 .intro p {
     font-size: 18px;
+    margin: 5px 0;
 }
 .intro a {
     color: #5C4033;
