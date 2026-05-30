@@ -6,7 +6,7 @@ body{
     color: #5C4033;
 }
 header{
-    padding: 30px;
+    padding: 20px;
     text-align: center; /*texto al centro*/
     background-color: #EAD5BF;
 }
@@ -95,8 +95,7 @@ nav a:hover {
     border-radius: 10px;
 }
 .logo img{
-    max-width: 500px;
+    max-width: 300px;
     height: auto;
-    background-color: transparent;
-    mix-blend-mode: multiply;
+    mix-blend-mode: multiply; /*los colores del logo se mezclan con el color de la pag*/
 }
