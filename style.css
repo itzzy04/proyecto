@@ -93,9 +93,8 @@ nav a:hover {
     object-fit: cover; /*recorta sin deformar*/
     border-radius: 10px;
 }
-.log img{
+.logo img{
     max-width: 200px;
     height: auto;
-    background: transparent;
     mix-blend-mode: multiply; /*desaparece el fondo blanco del logo disque png*/
 }
