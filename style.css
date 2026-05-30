@@ -97,4 +97,6 @@ nav a:hover {
 .logo img{
     max-width: 500px;
     height: auto;
+    background-color: transparent;
+    mix-blend-mode: multiply;
 }
