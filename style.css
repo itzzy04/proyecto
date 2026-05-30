@@ -8,6 +8,7 @@ body{
 header{
     padding: 30px;
     text-align: center; /*texto al centro*/
+    background-color: #EAD5BF;
 }
 
 h1{
@@ -94,6 +95,6 @@ nav a:hover {
     border-radius: 10px;
 }
 .logo img{
-    max-width: 400px;
+    max-width: 600px;
     height: auto;
 }
