@@ -3,7 +3,7 @@ function obtenerSaludo() {
 
     if (hora >=6 && hora < 12) {
         return "¡Buen día :)!";
-    } else if (hora >=12 && hora < 19) {
+    } else if (hora >=12 && hora < 20) {
         return "Buenas tardes :)";
     } else {
         return "¡Buenas noches :)!";
@@ -11,7 +11,7 @@ function obtenerSaludo() {
 }
 function mostrarBienvenida() {
     const elemento = document.getElementById("bienvenida");
-    elemento.textContent = obtenerSaludo() + "Bienvenido/a a Patitas Perdidas";
+    elemento.innerHTML = obtenerSaludo() + "<br>Bienvenido/a a Patitas Perdidas";
 }
 document.addEventListener("DOMContentLoaded", function (){
     mostrarBienvenida();
