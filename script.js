@@ -14,5 +14,5 @@ function mostrarBienvenida() {
     elemento.textContent = obtenerSaludo() + "Bienvenido/a a Patitas Perdidas";
 }
 document.addEventListener("DOMContentLoaded", function (){
-    mostrarBienvenida;
+    mostrarBienvenida();
 });
