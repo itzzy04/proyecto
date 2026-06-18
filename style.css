@@ -1,6 +1,16 @@
+:root {
+    --fondo: #EAD5BF;
+    --fondo-card: #f5e6d3;
+    --texto: #5C4033;
+}
 
+body.tema-oscuro {
+    --fondo: #2c1f18;
+    --fondo-card: #3b2a22;
+    --texto: #f0d9c5;
+}
 body{
-    background-color: #EAD5BF;
+    background-color: var(--fondo);
     margin: 0;
     font-family: Arial, sans-serif;
     color: #5C4033;
@@ -49,7 +59,7 @@ nav a:hover {
 }
 /* Card Individual*/ 
 .card {
-    background-color: #f5e6d3;
+    background-color: var(--fondo-card);
     border-radius: 15px; /*esquinas redondas de las cards*/
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /*detalles de las sombras y difuminados*/
     overflow: hidden; /*el contenido no se sale de los bordes*/
@@ -111,4 +121,19 @@ nav a:hover {
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     margin-top: 15px;
+}
+.btn-tema {
+    background-color: #5C4033;
+    color: #fff;
+    border: none;
+    border-radius: 20px;
+    padding: 8px 16px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.btn-tema:hover {
+    opacity: 0.85;
 }

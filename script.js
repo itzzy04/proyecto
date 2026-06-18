@@ -16,3 +16,20 @@ function mostrarBienvenida() {
 document.addEventListener("DOMContentLoaded", function (){
     mostrarBienvenida();
 });
+function toggleTema() {
+    const body= document.body;
+    const boton = document.getElementById("btnTema");
+    const icono = document.getElementById("iconoTema");
+
+    const estdOscuro = body.classList.toggle("tema-oscuro");
+
+    if (estdOscuro) {
+        icono.className = "fa-solid fa-sun";
+        boton.textContent = "Modo claro";
+        boton.prepend(icono);
+    } else {
+        icono.className = "fa-solid fa-moon";
+        boton.textContent= "Modo oscuro";
+        boton.prepend(icono);
+    }
+}
