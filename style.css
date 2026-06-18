@@ -101,3 +101,10 @@ nav a:hover {
     mix-blend-mode: multiply; /*los colores del logo se mezclan con el color de la pag*/
     transform: scaleX(1.2); /*estira un poquis el logo*/
 }
+.bienvenida{
+    font-size: 16px;
+    font-weight: bold;
+    color: #5C4033;
+    margin-bottom: 8px;
+    padding-top: 10px;
+}
