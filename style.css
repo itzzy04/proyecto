@@ -123,15 +123,20 @@ nav a:hover {
     margin-top: 15px;
 }
 .btn-tema {
+    position: fixed;
+    top: 20px;
+    right: 20px;
     background-color: #5C4033;
     color: #fff;
     border: none;
-    border-radius: 20px;
-    padding: 8px 16px;
+    border-radius: 25px;
+    padding: 12px 22px;
     cursor: pointer;
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
-    margin-bottom: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    z-index: 999;
+    transition: opacity 0.2s;
 }
 
 .btn-tema:hover {
@@ -154,5 +159,9 @@ body.tema-oscuro .card-info h3 {
 }
 
 body.tema-oscuro .card-info p {
+    color: var(--texto);
+}
+body.tema-oscuro .bienvenida{
+    background-color: #6b4c35;
     color: var(--texto);
 }
