@@ -24,10 +24,10 @@ function toggleTema() {
     const estdOscuro = body.classList.toggle("tema-oscuro");
 
     if (estdOscuro) {
-        icono.className = "fa-solid fa-sun";
+        icono.textContent = "☀️";
         boton.lastChild.textContent = "Modo claro";
     } else {
-        icono.className = "fa-solid fa-moon";
+        icono.textContent = "🌙";
         boton.lastChild.textContent = "Modo oscuro";
     }
 }

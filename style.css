@@ -5,9 +5,9 @@
 }
 
 body.tema-oscuro {
-    --fondo: #3d2b1f;
-    --fondo-card: #4a3528;
-    --texto: #f0d9c5;
+    --fondo: #4a3020;
+    --fondo-card: #6b4c35;
+    --texto: #f5e0c8;
 }
 body{
     background-color: var(--fondo);
@@ -136,4 +136,23 @@ nav a:hover {
 
 .btn-tema:hover {
     opacity: 0.85;
+}
+body.tema-oscuro nav a {
+    color: var(--texto);
+}
+
+body.tema-oscuro .intro p {
+    color: var(--texto);
+}
+
+body.tema-oscuro .intro a {
+    color: var(--texto);
+}
+
+body.tema-oscuro .card-info h3 {
+    color: var(--texto);
+}
+
+body.tema-oscuro .card-info p {
+    color: var(--texto);
 }
