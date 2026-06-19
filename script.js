@@ -25,11 +25,9 @@ function toggleTema() {
 
     if (estdOscuro) {
         icono.className = "fa-solid fa-sun";
-        boton.textContent = "Modo claro";
-        boton.prepend(icono);
+        boton.lastChild.textContent = "Modo claro";
     } else {
         icono.className = "fa-solid fa-moon";
-        boton.textContent= "Modo oscuro";
-        boton.prepend(icono);
+        boton.lastChild.textContent = "Modo oscuro";
     }
 }

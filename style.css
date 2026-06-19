@@ -5,8 +5,8 @@
 }
 
 body.tema-oscuro {
-    --fondo: #2c1f18;
-    --fondo-card: #3b2a22;
+    --fondo: #3d2b1f;
+    --fondo-card: #4a3528;
     --texto: #f0d9c5;
 }
 body{
@@ -18,17 +18,17 @@ body{
 header{
     padding: 5px 30px 30px;
     text-align: center; /*texto al centro*/
-    background-color: #EAD5BF;
+    background-color: var(--fondo);
 }
 
 h1{
-    color: #5C4033;
+    color:  var(--texto);
     margin: 0 0 15px 0; /* espacio externo: arriba, derecha, abajo, izq*/
 }
 
 nav a{
     text-decoration: none; /* quita el azul de los links*/
-    color: #5C4033; /* color del link*/
+    color: var(--texto); /* color del link*/
     margin: 0 15px;
     font-weight: bold; /* texto en negrita*/
 }
