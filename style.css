@@ -165,3 +165,7 @@ body.tema-oscuro .bienvenida{
     background-color: #6b4c35;
     color: var(--texto);
 }
+body.tema-oscuro .btn-tema {
+    background-color: #f5e0c8;
+    color: #4a3020;
+}
