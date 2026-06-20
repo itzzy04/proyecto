@@ -47,6 +47,10 @@ function validarNombre() {
         mostrarError("error-nombre", "El nombre es obligatorio.");
         return false;
     }
+    if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(valor)) {
+        mostrarError("error-nombre", "El nombre solo puede contener letras.");
+        return false;
+    }
     mostrarError("error-nombre", "");
     return true;
 }
