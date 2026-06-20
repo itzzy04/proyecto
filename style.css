@@ -169,3 +169,116 @@ body.tema-oscuro .btn-tema {
     background-color: #f5e0c8;
     color: #4a3020;
 }
+.seccion-suscripcion {
+    text-align: center;
+    padding: 40px 20px 60px;
+}
+
+.seccion-suscripcion h2 {
+    font-size: 24px;
+    color: var(--texto);
+    margin-bottom: 8px;
+}
+
+.seccion-suscripcion p {
+    color: var(--texto);
+    margin-bottom: 24px;
+}
+
+.formulario-contenedor {
+    display: flex;
+    justify-content: center;
+}
+
+.formulario {
+    background-color: var(--fondo-card);
+    border-radius: 16px;
+    padding: 30px 36px;
+    width: 100%;
+    max-width: 420px;
+    text-align: left;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 18px;
+}
+
+.campo label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: 14px;
+    color: var(--texto);
+}
+
+.campo input[type="text"],
+.campo input[type="number"] {
+    padding: 9px 12px;
+    border: 1.5px solid #c9a07a;
+    border-radius: 8px;
+    font-size: 14px;
+    background-color: #fff;
+    color: #5C4033;
+}
+
+.campo-check label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+.campo-check a {
+    color: var(--texto);
+}
+
+.error {
+    display: none;
+    color: #c0392b;
+    font-size: 12px;
+    margin-top: 4px;
+}
+
+.error.visible {
+    display: block;
+}
+
+.btn-submit {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--texto);
+    color: var(--fondo);
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 8px;
+}
+
+.btn-submit:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.btn-submit:not(:disabled):hover {
+    opacity: 0.85;
+}
+
+.exito {
+    display: none;
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #d4edda;
+    color: #2e7d32;
+    border-radius: 8px;
+    font-size: 14px;
+    text-align: center;
+}
+
+.exito.visible {
+    display: block;
+}

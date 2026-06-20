@@ -20,14 +20,14 @@
         <nav>
             <a href="#">Inicio</a>
             <a href="#mascotas">Mascotas</a>
-            <a href="#publicar">Publicar</a>
+            <a href="#suscripcion">Publicar</a>
         </nav>
     </header>
 
     <section class="intro">
-        <p>¿Tu regalón se perdió y no sabes cómo seguir buscándolo?<br>
-            Patitas Perdidas te ayuda a conectar con personas de tu ciudad que podrían haber visto a tu mascota
-            <a href="#publicar">¡Publica su foto!</a></p>
+    <p>¿Perdiste a tu regalón y no sabes cómo seguir buscándolo?<br>
+        Patitas Perdidas te ayuda a conectar con personas de tu ciudad que podrían haber visto a tu mascota<br>
+        <a href="#suscripcion">¡Regístrate aquí!</a> para poder publicar</p>
     </section>
 
     <section class="mascotas" id="mascotas">
@@ -61,6 +61,48 @@
         </div>
 
     </section>
+    <section class="seccion-suscripcion" id="suscripcion">
+    <h2>Regístrate 🐾</h2>
+    <p>Completa tus datos para comenzar.</p>
+
+    <div class="formulario-contenedor">
+        <div class="formulario" id="formulario">
+
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" placeholder="Tu nombre completo">
+                <span class="error" id="error-nombre"></span>
+            </div>
+
+            <div class="campo">
+                <label for="email">Correo electrónico</label>
+                <input type="text" id="email" placeholder="tucorreo@ejemplo.com">
+                <span class="error" id="error-email"></span>
+            </div>
+
+            <div class="campo">
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" placeholder="Tu edad">
+                <span class="error" id="error-edad"></span>
+            </div>
+
+            <div class="campo campo-check">
+                <label>
+                    <input type="checkbox" id="terminos">
+                    Acepto los <a href="#">términos y condiciones</a>
+                </label>
+                <span class="error" id="error-terminos"></span>
+            </div>
+
+            <button id="btnSubmit" class="btn-submit" disabled onclick="enviarFormulario()">
+                Registrarme
+            </button>
+
+            <div class="exito" id="mensajeExito"></div>
+
+        </div>
+    </div>
+</section>
     <script src="script.js"></script>
 </body>
 </html>
