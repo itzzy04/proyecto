@@ -14,11 +14,6 @@ function mostrarBienvenida() {
     const elemento = document.getElementById("bienvenida");
     elemento.innerHTML = obtenerSaludo() + "<br>¡Bienvenid@ a Patitas Perdidas!";
 }
-//se ejecuta apenas la página carga (el saludo y el formulario)
-document.addEventListener("DOMContentLoaded", function (){
-    mostrarBienvenida();
-    iniciarEventos();
-});
 function toggleTema() {
     const body= document.body;
     const boton = document.getElementById("btnTema");
@@ -156,3 +151,8 @@ function iniciarEventos() {
         verificarFormulario();
     });
 }
+//cuando termine de cargar la página, ejecuta las sgtes funciones (son para que salgan siempre!!!)
+document.addEventListener("DOMContentLoaded", function (){
+    mostrarBienvenida();
+    iniciarEventos();
+});
