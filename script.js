@@ -9,10 +9,12 @@ function obtenerSaludo() {
         return "Buenas noches";
     }
 }
+//pone el saludito en el div 
 function mostrarBienvenida() {
     const elemento = document.getElementById("bienvenida");
     elemento.innerHTML = obtenerSaludo() + "<br>¡Bienvenid@ a Patitas Perdidas!";
 }
+//se ejecuta apenas la página carga (el saludo y el formulario)
 document.addEventListener("DOMContentLoaded", function (){
     mostrarBienvenida();
     iniciarEventos();
@@ -32,6 +34,7 @@ function toggleTema() {
         boton.lastChild.textContent = "Modo oscuro";
     }
 }
+//VALIDACIONES
 function mostrarError(idError, mensaje) {
     const span = document.getElementById(idError);
     span.textContent = mensaje;
@@ -47,7 +50,7 @@ function validarNombre() {
         mostrarError("error-nombre", "El nombre es obligatorio.");
         return false;
     }
-    if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(valor)) {
+    if (!/^[a-zA-ZáéíóúÁÉÍÓÚñÑ\s]+$/.test(valor)) { // el if solo permite letras, nada de números ni signos
         mostrarError("error-nombre", "El nombre solo puede contener letras.");
         return false;
     }
@@ -91,6 +94,7 @@ function validarTerminos() {
     mostrarError("error-terminos", "");
     return true;
 }
+//Verificar formulario
 function verificarFormulario() {
     const nombreOk = document.getElementById("nombre").value.trim() !== "";
     const emailOk = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(document.getElementById("email").value.trim());
@@ -104,6 +108,7 @@ function verificarFormulario() {
         boton.disabled = true;
     }
 }
+//capitaliza el nombre para q salga con la primera en mayúscula
 function arreglarNombre(nombre) {
     return nombre.charAt(0).toUpperCase() + nombre.slice(1).toLowerCase();
 }
@@ -116,7 +121,7 @@ function enviarFormulario() {
     if (nombreValido && emailValido && edadValida && terminosValido) {
         const nombre = arreglarNombre(document.getElementById("nombre").value.trim());
         const div = document.getElementById("mensajeExito");
-        div.innerHTML= "¡Gracias, " + nombre + "! Tu registro fue exitoso.<br>Pronto podrás publicar a tu mascota perdida";
+        div.innerHTML= "¡Gracias, " + nombre + "! Tu registro fue exitoso.<br>Pronto podrás publicar a tu mascota perdida"; //innerHTML permite etiquetas html
         div.classList.add("visible");
         limpiarFormulario();
     }
@@ -132,7 +137,7 @@ function limpiarFormulario() {
     mostrarError("error-terminos", "");
     document.getElementById("btnSubmit").disabled = true;
 }
-// ---- EVENTOS (se ejecutan al cargar la página) ----
+//EVENTOS (se ejecutan al cargar la página)
 function iniciarEventos() {
     document.getElementById("nombre").addEventListener("input", function () {
         validarNombre();
